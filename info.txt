@@ -1,0 +1,19 @@
+CS531!
+
+Project 3 is now up on Blackboard and is in the same form as what was demoed in class the other night. Read through the documentation carefully for all of the implementation details.
+
+The second page has examples of Adjacency Matrices in general. The one you will be implementing for this project is detailed throughout the rest of the document and will need to support directed, weighted graphs that can have disconnected components and self-edges.  Vertices are numbered with 0 being the smallest legal vertex number and a maximum count of vertices specified by the MAX_VERTICES constant.  The range is [0, MAX_VERTICES)
+
+You will need to do more design up-front on this one.  The document says you have to use the adj_matrix field of a Graph struct to store your adjacency matrix, but it doesn't say what values should represent each case: ie. vertex with no edges, vertex with self-edges, no edges between vertices, edges between vertices.  Weights will be stored with every edge.  All weights must be > 0. 
+
+The last page has an example of a graph that will be representable, along with a few properties of that graph, the file format that would produce that graph, and the output file format to produce that image, all of which are specified in the documentation.
+
+This project will require you to create graph.c for all of your functions that will implement the prototypes in the provided graph.h.  You will need to do a lot of design before you start implementing.  You will also need to create a second source file with a main to test your code.  Do not put a main function inside of graph.c.   Only graph.c will be submitted.
+
+Take care when testing.  Project 2 grading is going very slowly because about 50% of the submissions have segfaults on core tests.  Not every error condition was specified in this project documentation!  If you get in a NULL input, do not try and dereference anything on it until after you check to see if it is NULL.  Make sure to check all input values for proper ranges before using anything.  Every function description in the document has a specification of what to do on any error condition.
+
+This will be due on December 3 at 11:59pm.   Make sure to allocate sufficient time as early as possible for this.  Do not get caught having to rapidly finish your project in the last day, which will only lead to careless mistakes.
+
+Good Luck!
+
+- Prof. Andrea
